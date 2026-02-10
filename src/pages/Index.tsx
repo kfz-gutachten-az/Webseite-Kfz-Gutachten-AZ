@@ -1,0 +1,141 @@
+import { Link } from "react-router-dom";
+import { Phone, ArrowRight, Shield, FileText, Car } from "lucide-react";
+import Layout from "@/components/Layout";
+
+const Index = () => {
+  return (
+    <Layout>
+      {/* Hero */}
+      <section className="relative py-24 md:py-36 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent" />
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-3xl">
+            <div className="h-1 w-20 bg-primary mb-8" />
+            <h1 className="font-heading text-5xl md:text-7xl font-bold tracking-tight leading-none mb-4">
+              KFZ-GUTACHTEN <span className="text-primary">AZ</span>
+            </h1>
+            <p className="font-heading text-lg md:text-xl tracking-widest uppercase text-muted-foreground mb-2">
+              Ingenieurbüro für Kfz-Schäden & Kfz-Bewertungen
+            </p>
+            <p className="text-primary font-heading text-base tracking-wider uppercase mb-8">
+              Ihr Kfz-Sachverständigen-Team
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/kontakt"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 font-heading text-sm tracking-widest uppercase hover:bg-primary/90 transition-colors"
+              >
+                Kontakt aufnehmen
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+              <a
+                href="tel:+4917672425003"
+                className="inline-flex items-center gap-2 border border-primary text-primary px-8 py-3 font-heading text-sm tracking-widest uppercase hover:bg-primary/10 transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                0176 72425 003
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blue divider */}
+      <div className="h-1 bg-primary w-full" />
+
+      {/* About */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
+                Willkommen bei <span className="text-primary">Kfz-Gutachten AZ</span>
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Wir sind Ihr kompetenter Partner für professionelle Unfallgutachten in Berlin, Brandenburg und Umgebung. 
+                Mit langjähriger Erfahrung erstellen wir präzise Kfz-Gutachten für Ihre Schadensregulierung.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Unser Team aus qualifizierten Kfz-Sachverständigen steht Ihnen schnell, zuverlässig und unabhängig zur Seite.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="flex items-start gap-3">
+                  <Shield className="h-8 w-8 text-primary shrink-0" />
+                  <div>
+                    <h4 className="font-heading text-sm font-semibold">Unabhängig</h4>
+                    <p className="text-xs text-muted-foreground">Neutrale Begutachtung</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <FileText className="h-8 w-8 text-primary shrink-0" />
+                  <div>
+                    <h4 className="font-heading text-sm font-semibold">Professionell</h4>
+                    <p className="text-xs text-muted-foreground">Detaillierte Gutachten</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Car className="h-8 w-8 text-primary shrink-0" />
+                  <div>
+                    <h4 className="font-heading text-sm font-semibold">Schnell</h4>
+                    <p className="text-xs text-muted-foreground">Zeitnahe Termine</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact + Map */}
+            <div className="bg-card rounded-lg border border-border p-6">
+              <h3 className="font-heading text-lg font-bold mb-4 text-primary tracking-wider uppercase">
+                So erreichen Sie uns
+              </h3>
+              <ul className="space-y-4 text-sm mb-6">
+                <li className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold">Adresse</p>
+                    <p className="text-muted-foreground">Hochstr 12, 13357 Berlin</p>
+                  </div>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Phone className="h-5 w-5 text-primary shrink-0" />
+                  <div>
+                    <p className="font-semibold">Mobil</p>
+                    <p className="text-muted-foreground">0176 72425 003</p>
+                  </div>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Phone className="h-5 w-5 text-primary shrink-0" />
+                  <div>
+                    <p className="font-semibold">Telefon / Fax</p>
+                    <p className="text-muted-foreground">030 857 68 065 / 030 22185133</p>
+                  </div>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Mail className="h-5 w-5 text-primary shrink-0" />
+                  <div>
+                    <p className="font-semibold">E-Mail</p>
+                    <p className="text-muted-foreground">info@kfz-gutachten-az.de</p>
+                  </div>
+                </li>
+              </ul>
+              <div className="rounded overflow-hidden border border-border">
+                <iframe
+                  title="Standort Kfz-Gutachten AZ"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.0!2d13.3833!3d52.5500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHochstra%C3%9Fe+12%2C+13357+Berlin!5e0!3m2!1sde!2sde!4v1"
+                  width="100%"
+                  height="200"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default Index;
