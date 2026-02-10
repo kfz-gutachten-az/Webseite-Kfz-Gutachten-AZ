@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFZ Gutachten AZ – Unabhängiger Kfz-Sachverständiger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>KFZ Gutachten AZ</h1>
+        <p>Ihr unabhängiger Kfz-Sachverständiger</p>
+        <nav>
+            <a href="#start">Startseite</a>
+            <a href="#services">Services</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+<section id="start" class="hero">
+    <div class="container">
+        <h2>Professionelle KFZ-Gutachten nach Unfällen</h2>
+        <p>
+            Wir erstellen unabhängige und rechtssichere Kfz-Gutachten
+            für Geschädigte, Versicherungen und Rechtsanwälte.
+        </p>
+        <a href="#kontakt" class="btn">Jetzt Kontakt aufnehmen</a>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2>Unsere Services</h2>
+
+        <div class="services-grid">
+            <div class="service-box">
+                <h3>Unfallgutachten</h3>
+                <p>
+                    Detaillierte Schadengutachten nach Verkehrsunfällen –
+                    unabhängig, objektiv und versicherungskonform.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <h3>Schadensbewertung</h3>
+                <p>
+                    Ermittlung von Reparaturkosten, Wertminderung
+                    und Wiederbeschaffungswert.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <h3>Beratung</h3>
+                <p>
+                    Persönliche Beratung zu Ihren Rechten als Geschädigter
+                    und zum weiteren Vorgehen.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="contact">
+    <div class="container">
+        <h2>Kontakt</h2>
+
+        <div class="contact-grid">
+            <div>
+                <p><strong>Telefon:</strong> 0123 / 456789</p>
+                <p><strong>E-Mail:</strong> info@kfz-gutachten-az.de</p>
+                <p><strong>Einsatzgebiet:</strong> Regional & überregional</p>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Ihr Name" required>
+                <input type="email" placeholder="Ihre E-Mail" required>
+                <textarea placeholder="Ihre Nachricht" required></textarea>
+                <button type="submit">Nachricht senden</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-links">
+        <p>&copy; 2026 KFZ Gutachten AZ</p>
+        <p>
+            <a href="#">Impressum</a> |
+            <a href="#">Datenschutz</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
